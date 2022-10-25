@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * _putchar - writes chharacter c to stdout
+ * _putchar _ writes character c to stdout
  * @c: char to be printed
- * Return: on success 1
+ * Return: On success 1
  */
-int _puchar(char c)
+int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
