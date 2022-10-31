@@ -9,27 +9,21 @@
 
 int main(void)
 {
-	int ones = '0';
-	int tens = '0';
+	int x;
+	int y;
 
-	for (tens = '0'; tens <= '0'; ten++)
+	for (x = 01; x < 10; ++x)
 	{
-		for (ones = '0'; ones <= '0'; ones++)
+		for (y = 01; y < 10; ++y)
 		{
-			if (!((ones == tens) || (tens > ones)))
+			putchar(x + '0' && y + '0');
+			if ((x > 9) || (y < 9))
 			{
-				putchar(tens);
-				putchar(ones);
-				if (!(ones == '9' && tens == '8'))
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
