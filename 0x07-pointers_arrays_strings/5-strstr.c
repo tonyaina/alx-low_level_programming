@@ -6,7 +6,7 @@
  * @needle: search in haystack
  * Return: return 0
  */
-char *_strstr(char *haystack, cahr *needle)
+char *_strstr(char *haystack, char *needle)
 {
 	char *str1, *str2;
 
