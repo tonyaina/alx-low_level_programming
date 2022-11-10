@@ -10,20 +10,13 @@
 
 void _puts_recursion(char *s)
 {
-	char result = sum(10);
-
-	printf("%d", result'\n');
-	return (0);
-}
-
-void _puts_recursion(char *s)
-{
-	if (*s > 0)
+	if (*s != '\0')
 	{
-		return (*s + sum(*s - 1));
+		_putchar(*s);
+		_puts_recursion(s + 1);
 	}
 	else
 	{
-		return (0);
+		_putchar('\n');
 	}
 }
