@@ -1,13 +1,10 @@
 #include "main.h"
 
 /**
- * _puts_recursion - function like puts
- *
- * @s: input string to print
- *
- * Return: Always 0 (Success)
+ * _puts_recursion - print a string.
+ * @s: pointer to a character
+ * Return: Always 0
  */
-
 void _puts_recursion(char *s)
 {
 	if (*s != '\0')
